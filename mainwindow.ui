@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="textEdit">
+    <property name="geometry">
+     <rect>
+      <x>18</x>
+      <y>18</y>
+      <width>256</width>
+      <height>192</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>39</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFIle">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionDebug"/>
+    <addaction name="actionGrammar_Check"/>
+    <addaction name="actionSave"/>
+    <addaction name="actionSave_As"/>
+   </widget>
+   <widget class="QMenu" name="menuWindow">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+    <addaction name="actionZoom_in"/>
+    <addaction name="actionZoom_out"/>
+    <addaction name="actionCLose"/>
+    <addaction name="actionUndo"/>
+    <addaction name="actionRedo"/>
+   </widget>
+   <widget class="QMenu" name="menuAbout">
+    <property name="title">
+     <string>About</string>
+    </property>
+    <addaction name="actionResume"/>
+   </widget>
+   <widget class="QMenu" name="menuFormat">
+    <property name="title">
+     <string>Format</string>
+    </property>
+    <addaction name="actionBold"/>
+    <addaction name="actionSuperScript"/>
+    <addaction name="actionSubScript"/>
+   </widget>
+   <addaction name="menuFIle"/>
+   <addaction name="menuWindow"/>
+   <addaction name="menuAbout"/>
+   <addaction name="menuFormat"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionDebug">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_323fda5a-9315-4aee-b76a-92ecf0841d1a.png</normaloff>:/Images/small_2x_323fda5a-9315-4aee-b76a-92ecf0841d1a.png</iconset>
+   </property>
+   <property name="text">
+    <string>New</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+D</string>
+   </property>
+  </action>
+  <action name="actionGrammar_Check">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_323fda5a-9315-4aee-b76a-92ecf0841d1a.png</normaloff>:/Images/small_2x_323fda5a-9315-4aee-b76a-92ecf0841d1a.png</iconset>
+   </property>
+   <property name="text">
+    <string>Open</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Q</string>
+   </property>
+  </action>
+  <action name="actionZoom_in">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_6d875dfb-3755-474a-a2f6-df4762b551de.png</normaloff>:/Images/small_2x_6d875dfb-3755-474a-a2f6-df4762b551de.png</iconset>
+   </property>
+   <property name="text">
+    <string>Copy</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionZoom_out">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_879a969a-38b0-4f0e-8dc5-ac78b93952db.png</normaloff>:/Images/small_2x_879a969a-38b0-4f0e-8dc5-ac78b93952db.png</iconset>
+   </property>
+   <property name="text">
+    <string>Cut</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actionCLose">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_9eaa550d-0a27-408a-8f77-07f092a33ce9.png</normaloff>:/Images/small_2x_9eaa550d-0a27-408a-8f77-07f092a33ce9.png</iconset>
+   </property>
+   <property name="text">
+    <string>Paste</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="actionSave">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_9eaa550d-0a27-408a-8f77-07f092a33ce9.png</normaloff>:/Images/small_2x_9eaa550d-0a27-408a-8f77-07f092a33ce9.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="actionUndo">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_879a969a-38b0-4f0e-8dc5-ac78b93952db.png</normaloff>:/Images/small_2x_879a969a-38b0-4f0e-8dc5-ac78b93952db.png</iconset>
+   </property>
+   <property name="text">
+    <string>Undo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="actionRedo">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_6d875dfb-3755-474a-a2f6-df4762b551de.png</normaloff>:/Images/small_2x_6d875dfb-3755-474a-a2f6-df4762b551de.png</iconset>
+   </property>
+   <property name="text">
+    <string>Redo</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Y</string>
+   </property>
+  </action>
+  <action name="actionSave_As">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_323fda5a-9315-4aee-b76a-92ecf0841d1a.png</normaloff>:/Images/small_2x_323fda5a-9315-4aee-b76a-92ecf0841d1a.png</iconset>
+   </property>
+   <property name="text">
+    <string>Save As</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="actionResume">
+   <property name="icon">
+    <iconset resource="AppResources.qrc">
+     <normaloff>:/Images/small_2x_6d875dfb-3755-474a-a2f6-df4762b551de.png</normaloff>:/Images/small_2x_6d875dfb-3755-474a-a2f6-df4762b551de.png</iconset>
+   </property>
+   <property name="text">
+    <string>Resume</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+E</string>
+   </property>
+  </action>
+  <action name="actionBold">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>Bold</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+B</string>
+   </property>
+  </action>
+  <action name="actionSuperScript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>SuperScript</string>
+   </property>
+  </action>
+  <action name="actionSubScript">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>SubScript</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="AppResources.qrc"/>
+ </resources>
+ <connections/>
+</ui>
